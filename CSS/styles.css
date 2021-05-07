@@ -18,3 +18,54 @@ html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
 }
+/*---------------------Header----------------------------*/
+.header {
+    width: 100%;
+    padding: 40px 0 0 0;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.container-content {
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 33px;
+    text-align: center;
+}
+.container-content__textOne {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--JustWhite);
+}
+.container-content__textTwo {
+    margin-top: 24px;
+    margin-bottom: 61px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--SoftOrange);
+}
+.button-know {
+    width: 230px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    background-color: var(--OffWhite);
+    position: absolute;
+    top: calc(100% - 25px);
+}
+.button-know__link {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--WarmBlack);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
