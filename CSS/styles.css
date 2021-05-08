@@ -176,11 +176,9 @@ html {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-
     width: 12px;
     height: 10px;
     margin-left: 10px;
-
     position: absolute;
     top: calc(60% - 5px);
     left: calc(100% - 12px);
@@ -191,10 +189,8 @@ html {
     height: 30px;
     margin: 25px 0 65px;
     padding: 8px;
-
     border-radius: 8px;
     background-color: var(--SoftOrange);
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -211,11 +207,90 @@ html {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-
     display: inline-block;
     width: 41px;
     height: 26px;
-
     position: absolute;
     top: calc(100% - 13px);
+}
+/*------------web-info Section-----------*/
+.web-info {
+    width: 100%;
+    padding: 65px 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--WarmBlack);
+}
+.container-webInfoText {
+    width: 100%;
+    text-align: center;
+    padding: 0 15px;
+}
+.container-webInfoText__textOne {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--JustWhite);
+}
+.container-webInfoText__textTwo {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: rgba(128, 128, 128, 1);
+}
+/*------------web-info Section Cards-----------*/
+.container-cards {
+    min-width: 288px;
+    max-width: 690px;
+    min-height: 400px;
+    margin-top: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.card {
+    width: 288px;
+    min-height: 152px;
+    padding: 16px 20px 22px 16px;
+    margin-top: 15px;
+    background-color: var(--WarmBlack_1);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.card__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--JustWhite);
+    margin-bottom: 10px;
+}
+.card__text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgba(128, 128, 128, 1);
+}
+.card__icon {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 12px;
+}
+.--iconClock {
+    background-image: url(../ICONS/clock.svg);
+}
+.--iconEye {
+    background-image: url(../ICONS/eye.svg);
+}
+.--iconDollar {
+    background-image: url(../ICONS/dollar-sign.svg);
+}
+.--iconCheck {
+    background-image: url(../ICONS/check-circle.svg);
 }
