@@ -294,3 +294,20 @@ html {
 .--iconCheck {
     background-image: url(../ICONS/check-circle.svg);
 }
+/*--------------------Banner Section---------------------*/
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.banner__img {
+    min-width: 320px;
+}
+.banner__title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--JustWhite);
+    position: absolute;
+    top: 16%;
+}
