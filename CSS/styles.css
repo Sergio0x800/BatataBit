@@ -5,7 +5,7 @@
     --SoftBlue:  #E7F5FF;
     --WarmBlack: #201E1C;
     --WarmBlack_1: #282623;
-    --Grey: #BABABA;
+    --GreyTextTwo: #757575;
     --OffWhite: #FAF8F7;
     --JustWhite: #FFFFFF;
 }
@@ -107,7 +107,7 @@ html {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
-    color: rgba(117, 117, 117, 1);
+    color: var(--GreyTextTwo);
 }
 /*------------CoinInfo Table with Grid-----------------*/
 .coin-table {
@@ -142,7 +142,7 @@ html {
 }
 .container-coinInfo__amountCoin {
     font: 400 1.4rem 'Inter', sans-serif;
-    color: rgba(117, 117, 117, 1);
+    color: var(--GreyTextTwo);
 }
 .container-coinInfo__icon {
     display: inline-block;
@@ -302,7 +302,7 @@ html {
     position: relative;
 }
 .banner__img {
-    min-width: 320px;
+    width: 100%;
 }
 .banner__title {
     font-size: 2.4rem;
@@ -310,4 +310,140 @@ html {
     color: var(--JustWhite);
     position: absolute;
     top: 16%;
+}
+/*--------------------Payment Section---------------------*/
+.payments {
+    width: 100%;
+    padding: 65px 0;
+}
+.container-paymentText {
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 0 5px;
+    text-align: center;
+}
+.container-paymentText__One {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--WarmBlack);
+}
+.container-paymentText__Two {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--GreyTextTwo);
+    margin-top: 25px;
+}
+/*-----------------Payment Cards-------------------*/
+.container-paymentCards {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.payment-card {
+    width: 190px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    background-color: var(--JustWhite);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+}
+.payment-card__title {
+    width: 100px;
+    height: 30px;
+    font: 700 1.2rem 'Inter', sans-serif;
+    color: var(--JustWhite);
+    background-color: var(--BitcoinOrange);
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: calc(100% - 15px);
+}
+.payment-card__paymentType {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 1);
+    display: block;
+    margin-top: 30px;
+}
+.payment-card__containerAmount {
+    width: 90px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.payment-card__singAmount {
+    font: 500 1.2rem 'Inter', sans-serif;
+    padding-top: 5px;
+    margin-right: 5px;
+}
+.payment-card__amount {
+    font: 700 5.2rem 'Inter', sans-serif; 
+    letter-spacing: -4px; 
+}
+.payment-card__text {
+    font: 500 1.2rem 'Inter', sans-serif;
+    margin-top: 15px;
+    padding: 0 15px;
+    text-align: center;
+    color: var(--GreyTextTwo);
+}
+.payment-card__chooseButton {
+    width: 150px;
+    height: 50px;
+    margin: 15px 0 25px;
+    background-color: var(--OffWhite);
+    border: 2px solid var(--BitcoinOrange);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-chooseThis {
+    background-image: url(../ICONS/orange-right-arrow.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+}
+/*-------------------Footer------------------------*/
+.footer {
+    width: 100%;
+    padding: 40px 0 32px;
+    background-color: var(--BitcoinOrange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+.links-footer__item {
+    list-style: none;
+    padding-bottom: 8px;
+}
+.links-footer__link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--JustWhite);
 }
