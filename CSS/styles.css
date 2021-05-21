@@ -110,17 +110,33 @@ html {
     color: var(--GreyTextTwo);
 }
 /*------------CoinInfo Table with Grid-----------------*/
+.container-cards-web-info {
+    width: 100%;
+    max-width: 768px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    gap: 100px;
+    
+}
 .coin-table {
     min-width: 235px;
-    margin-top: 50px;
-    padding: 0 10px;
     display: grid;
     grid-template: repeat(5,40px) / repeat(2,100px);
     align-items: stretch;
     justify-content: center;
     justify-items: stretch;
-    gap: 2px;
     position: relative;
+    scroll-snap-align: center;
+    margin: 0 auto;
+}
+.--margin-comision {
+    padding-right: 70px;
+}
+.--margin-moneda {
+    padding-left: 100px;
 }
 .coin-table__title {
     margin-left: 15px;
@@ -128,6 +144,9 @@ html {
     font-weight: 700;
     color: rgba(255, 149, 54, 1);
     grid-column: 1 / -1;
+}
+.--title-blue {
+    color: var(--SecondaryBlue);
 }
 .container-coinInfo {
     padding: 12px;
@@ -171,19 +190,7 @@ html {
 .--radius-bottom-right {
     border-bottom-right-radius: 8px;
 }
-.coin-table__iconArrowRight {
-    background-image: url(../ICONS/right-arrow.svg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 12px;
-    height: 10px;
-    margin-left: 10px;
-    position: absolute;
-    top: calc(60% - 5px);
-    left: calc(100% - 12px);
-}
-/*----------Container DateUpdated and iconBatata-----------*/
+/*----------Container DateUpdated-----------*/
 .container-dateupdated {
     width: 190px;
     height: 30px;
@@ -195,12 +202,25 @@ html {
     align-items: center;
     justify-content: center;
 }
+.--background-blue {
+    background-color: var(--SoftBlue);
+}
 .container-dateupdated__textStrong {
     font: 700 1.4rem 'Inter', sans-serif;
     margin-right: 5px;
 }
 .container-dateupdated__text {
     font: normal 1.2rem 'Inter', sans-serif;
+}
+/*------------web-info Section-----------*/
+.web-info {
+    width: 100%;
+    padding: 65px 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--WarmBlack);
+    position: relative;
 }
 .coin-table__iconBatata {
     background-image: url(../ICONS/batata.svg);
@@ -211,16 +231,7 @@ html {
     width: 41px;
     height: 26px;
     position: absolute;
-    top: calc(100% - 13px);
-}
-/*------------web-info Section-----------*/
-.web-info {
-    width: 100%;
-    padding: 65px 0 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--WarmBlack);
+    bottom: calc(100% - 13px);
 }
 .container-webInfoText {
     width: 100%;
@@ -297,8 +308,6 @@ html {
 /*--------------------Banner Section---------------------*/
 .banner {
     width: 100%;
-    display: flex;
-    justify-content: center;
     position: relative;
 }
 .banner__img {
@@ -310,6 +319,7 @@ html {
     color: var(--JustWhite);
     position: absolute;
     top: 16%;
+    left: calc(50% - 81.5px);
 }
 /*--------------------Payment Section---------------------*/
 .payments {
@@ -338,11 +348,19 @@ html {
 /*-----------------Payment Cards-------------------*/
 .container-paymentCards {
     width: 100%;
+    height: 320px;
+
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    gap: 30px;
+
     display: flex;
-    justify-content: space-around;
+    align-items: center;
 }
 .payment-card {
-    width: 190px;
+    min-width: 190px;
+    height: 285px;
+    margin: 0 auto;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
     background-color: var(--JustWhite);
@@ -353,6 +371,7 @@ html {
     justify-content: center;
 
     position: relative;
+    scroll-snap-align: center;
 
 }
 .payment-card__title {
